@@ -289,6 +289,12 @@ color: white;
     
 }
 
+.btn-wsp:hover{
+    width: 75px;
+    height: 75px;
+    transition: 500ms;
+}
+
 
 
 
