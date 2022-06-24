@@ -135,7 +135,10 @@ color: white;
 
 }
 
-
+.item ul :hover{
+    color: coral;
+    transition: 200ms;
+}
 
 
 .img-prueba{
