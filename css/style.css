@@ -1,19 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-
-*{
-    margin: 0;
-    padding: 0;
-    border: 0;
+* {
     outline: 0;
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
 }
 
-
 body {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.863), rgba(255, 255, 255, 0.493));
+    background-color:rgba(94, 94, 93, 0.89) ;
     font-family: 'Bebas Neue';
 }
 
@@ -595,4 +590,101 @@ color: white;
 }
 
 
+@media screen and (min-width:400px) and (max-width:900px){
+
+    .div-container-index{
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr  1fr 1fr 1fr;
+        height: 70vh;
+        grid-template-areas: 
+        "header_responsive" 
+        "section1_responsive"
+        "section2_responsive"
+        "footer_responsive";
+    }
+
+    .container{
+        justify-content: center;
+    }
+
+    .header-index{
+        grid-area: header_responsive;
+    }
+
+    .container-inicio {
+        display: none;
+    }
+
+    .container-card-inicio{
+        grid-area: section1_responsive;
+    }
+
+    .texto-final-inicio{
+        grid-area: section2_responsive;
+    }
+
+    .texto-final-inicio h2{
+        display: none;
+    }
+
+    .pie{
+        grid-area: footer_responsive;
+    }
+
+    .container-barra-nav a {
+        font-size: 18px;
+    }
+
+    #stock-none{
+        display: none;
+    }
+
+    .container-barra-nav li {
+        padding: 5px;
+        margin: 10px;
+    }
+
+    .location-footer{
+        display: none;
+    }
+
+
+
+/* ==========RESPONSIVE PAG QUIENES SOMOS========== */
+
+.container-quienes-somos{
+    display: grid;
+    height: 70vh;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "header"
+    "quienessomos"
+    "footer_qs";
+}
+
+.header-quienessomos{
+    grid-area:header;
+}
+
+
+.quienes-somos{
+    grid-area: quienessomos;
+}
+
+.foto-quienes-somos{
+    display: none;
+}
+
+.pie-qs{
+    grid-area: footer_qs;
+}
+
+.pie-qs p{
+    display: none;
+}
+
+}
 
